@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/> 
+		<title>Reef Arg</title>
+		<link href="img/logo.png" rel="shortcut icon" type="image/png"/>
+		<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Gloria+Hallelujah|Amatic+SC" rel="stylesheet"/>
+		<link href="css/estilos.css" rel="stylesheet"/> 
+		<link href="js/formInteractive/css/component.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="js/formInteractive/js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="contenedor">
+			<div id="headerNoticias">
+				<div class="logo">
+					<h1><a href="index.html">ReefArg</a></h1>
+				</div>
+				<div class="navegacion">
+					<ul>
+						<li><a href="index.html">inicio</a></li>
+						<li><a href="animales.html">animales</a></li>
+						<li><a href="principiante.html">principiante</a></li>
+						<li><a href="noticias.html">noticias</a></li>
+						<li class="paginaActiva"><a href="registrarse.html">registrarse</a></li>
+					</ul>
+				</div>	
+			</div>
+			<!-- El form se penso para hacerlo via ajax, se agrega el action para que no rompa en el validator de la w3c-->
+			<div id="contenedorForm">
+				<h2 class="tituloh2">registrarse</h2>
+				<form id="theForm" class="simform" method="post" action="#">
+					<div class="simform-inner">
+						<ol class="questions">
+							<li>
+								<span>
+									<label for="usuarioInput">Usuario</label>
+								</span>
+								<input id="usuarioInput" name="usuario" type="text"/>
+							</li>
+							<li>
+								<span>
+									<label for="usuarioPassword">Contraseña</label>
+								</span>
+								<input id="usuarioPassword" name="password" type="password"/>
+							</li>
+							<li>
+								<span>
+									<label for="usuarioEmail">Email</label>
+								</span>
+								<input id="usuarioEmail" name="text" type="text"/>
+							</li>
+							<li>
+								<span>
+									<label for="avatarUsuario">Foto de perfil</label>
+								</span>
+								<input id="avatarUsuario" type="file" name="avatarUsuario" value="imagenPerfil" />
+							</li>
+							<li>
+								<span>
+									<label>Intereses</label>
+								</span>
+								<div id="divCheckboxIntereses">
+									<label for="reviewsOpcion">Reviews</label>
+									<input style="" id="reviewsOpcion" name="reviewCheck" value="reviews" type="checkbox"/> 
+									<label for="noticiasOpcion">Noticias</label>
+									<input id="noticiasOpcion" name="sexo" value="noticiasCheck" type="checkbox"/> 
+									<label for="descuentosOpcion">Descuentos</label>
+									<input id="descuentosOpcion" name="sexo" value="descuentosCheck" type="checkbox"/> 
+								</div>
+							</li>
+						</ol>
+						<button class="submit" type="submit"></button>
+						<div class="controls">
+							<button class="next"></button>
+							<div class="progress"></div>
+							<span class="number">
+								<span class="number-current"></span>
+								<span class="number-total"></span>
+							</span>
+							<span class="error-message"></span>
+						</div>
+					</div>
+					<p class="final-message"></p>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/formInteractive/js/classie.js"></script>
+		<script type="text/javascript" src="js/formInteractive/js/stepsForm.js"></script>
+		<script type="text/javascript">
+			var theForm = document.getElementById( 'theForm' );
+			new stepsForm( theForm, {
+				onSubmit : function( form ) {
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+					var messageEl = theForm.querySelector( '.final-message' );
+					messageEl.innerHTML = 'Gracias por registrarse!';
+					classie.addClass( messageEl, 'show' );
+				}
+			} );
+		</script>
+	</body>
+</html>

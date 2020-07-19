@@ -1,0 +1,9 @@
+/** Estilos de la libreria de invertScroll es el paralaxx para la pag de principiante... */
+body{
+    overflow-x: hidden;
+}
+.scroll{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

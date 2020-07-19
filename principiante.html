@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/> 
+		<title>Reef Arg</title>
+		<link href="img/logo.png" rel="shortcut icon" type="image/png"/>
+		<link href="css/estilos.css" rel="stylesheet"/> 
+		<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Gloria+Hallelujah|Amatic+SC" rel="stylesheet"/>
+	</head>
+	<body>
+		<!--Aca se complica dejar el contenedor fijo en 1200, por el paralaxx, la libreria ... -->
+		<div class="contenedor">
+			<div id="headerPrincipiante">
+				<div class="logo">
+					<h1><a href="index.html">ReefArg</a></h1>
+				</div>
+				<div class="navegacion">
+					<ul>
+						<li><a href="index.html">inicio</a></li>
+						<li><a href="animales.html">animales</a></li>
+						<li class="paginaActiva"><a href="principiante.html">principiante</a></li>
+						<li><a href="noticias.html">noticias</a></li>
+						<li><a href="registrarse.html">registrarse</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="horizontalOceano" class="scroll"></div>
+			<div id="medioOceano" class="scroll"></div>
+			<div id="contenidoPrincipianteMarino" class="scroll">
+				<h2 class="intro">¿Nuevo en marinos?</h2>
+				<div id="ayudaPecera" class="page">
+					<h3>EQUIPAMIENTO</h3>
+					<img src="img/acuario_paso1.png" alt="Pecera para el acuario tips"/>
+					<p>Pecera de vidrio de 100 <abbr title="Litros">Lts</abbr> o superior ,<em>a mayor volumen mejor estabilidad</em></p>
+				</div>
+				<div id="ayudaFiltrado" class="page">
+					<h3>FILTRACIÓN</h3>
+				   	<img src="img/equipamiento.png" alt="Filtracion para el acuario tips"/>
+	    			<p>Es esencial que nuestro acuario posea un sistema de filtrado a cargo de un <em>SKIMMER</em>, ya que
+	    			permite mantener los niveles de nitratos y fosfatos a un nivel bajo, mejorando la calidad
+	    			de vida de nuestros peces</p>
+				</div>
+				<div id="ayudaIluminacion" class="page">
+					<h3>ILUMINACIÓN</h3>
+				    <img src="img/sun.png" alt="Iluminacion para el acuario tips"/>
+    				<p>Una buena iluminación nos <em>permite mejorar el crecimiento de nuestros corales</em>, ya que la mayoría
+					    de ellos son fotosintéticos.</p>
+				</div>
+				<div id="ayudaRocaViva" class="page">
+					<h3>ROCA VIVA</h3>
+			    	<img src="img/roca_viva.png" alt="Roca viva para el acuario filtro biologico tips"/>
+    				<p>Es lo más importante de nuestro acuario, es nuestro <em>filtro biológico natural</em>, donde lograremos que se asienten nuestros organismos y bacterias</p>
+				</div>
+				<div id="ayudaTestKit" class="page">
+					<h3>PARÁMETROS</h3>
+			    	<img src="img/kit_test.png" alt="Test kit para el acuario mejorar condicion del acuario"/>
+    				<p>Si queremos tener un acuario con buen crecimiento y buena salud en nuestros corales, necesitamos medir los parámetros del mismo ejemplo: <abbr title="Calcio">CA</abbr>, <abbr title="Magnesio">MG</abbr>, <abbr title="Alcalinidad">KH</abbr>
+    				</p>
+				</div>
+				<div id="ayudaAlimentacion" class="page">
+					<h3>ALIMENTACIÓN</h3>
+			    	<img src="img/alimentacion_paso_ultimo.png" alt="Alimentacion para el acuario corales y peces"/>
+    				<p>Una buena alimentación permite mejorar la esperanza de vida de nuestros peces y corales , también
+    				mejora los colores de los peces y corales , existen diferentes productos comerciales ejemplo : Red Sea , Tetra, OceanNutrion</p>
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jInvertScroll/js/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript">
+    	(function($){$.jInvertScroll(['.scroll'],{height: 12000});}(jQuery));
+    </script>
+	</body>
+</html>
